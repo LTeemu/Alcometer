@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { Platform, Button, StyleSheet, Text, TextInput, View } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
-import RadioForm, { RadioButton, RadioButtonInput, RadioButtonLabel } from 'react-native-simple-radio-button';
+import RadioForm from 'react-native-simple-radio-button';
 
 export default function App() {
 
