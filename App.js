@@ -87,7 +87,7 @@ export default function App() {
       </View>
 
       <Text style={styles.text}>Gender</Text>
-      <RadioForm
+      <RadioForm style={styles.radio}
         radio_props={radio_props}
         onPress={value => setGender(value)}
         initial={0}
@@ -112,20 +112,27 @@ const styles = StyleSheet.create({
     borderBottomColor: 'gray',
     textAlign: 'center',
     width: 100,
-    padding: 4,
+    padding: 2,
     fontSize: 20,
+    marginBottom: 10,
     backgroundColor: '#dbe8ee'
   },
   pickerPC: {
     textAlign: 'center',
-    padding: 5
+    padding: 5,
+    marginBottom: 10
   },
   pickerAndroid: {
     textAlign: 'center',
-    width: 150
+    marginBottom: 10,
+    width: 150,
+    padding: 2
   },
   pickerContainer: {
     flexDirection: 'column',
+  },
+  radio: {
+    marginBottom: 10
   },
   text: {
     marginVertical: 8,
